@@ -59,8 +59,48 @@
    }
  }
 
- 
+ /*
+ const date = new Date();
+ console.log(date);
+ console.log(date.toLocaleTimeString());
+ */
 
+ /*
+ //will be undefined outside the function
+
+ console.log(this);
+
+ const object2 = {
+  a: 2;
+  b: this.a
+ };
+ */
+
+ /*
+ //inside a function, this=undefined
+ function logThis() {
+  console.log(this);
+ }
+ logThis();
+ //but we change it
+ logThis.call('hello');
+
+ //inside a method, "this" points to the outer object
+ const object3 = {
+   method() {
+    console.log(this);
+   }
+ };
+ object3.method();
+
+ //arrow function do not change the value of "this"
+  console.log(this);
+  [1,2,3].forEach(() => {
+       console.log(this);
+   });
+*/
+
+ 
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
